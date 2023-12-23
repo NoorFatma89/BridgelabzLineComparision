@@ -8,6 +8,8 @@ public class Main {
 		LineComparision lineComparision=new LineComparision();
 		System.out.println();
 		lineComparision.CalculateLengthOfLine();
+		System.out.println();
+		lineComparision.checkLineEquality();
 	}
 
 }
