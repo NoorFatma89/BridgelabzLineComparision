@@ -5,9 +5,9 @@ public class Main {
 		LineComparision ln= new LineComparision();
 		Line1 line1 = new Line1();
 		Line2 line2 = new Line2();
-		System.out.println("length of 1st Line= "+line1.line1);
-		System.out.println("length of 2nd Line = "+line2.line2);
-		ln.byEquals();
-		ln.byCompareTo();
+		System.out.println("length of 1st Line= "+line1.length1);
+		System.out.println("length of 2nd Line = "+line2.length2);
+		ln.checkLineEquality();
+		ln.compareTwoLines();
 	}
 }
