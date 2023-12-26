@@ -4,22 +4,43 @@ public class LineComparision {
 		
 		Line1 l1;
 		Line2 l2;
-
-		public void byEquals() {
+		
+//	 	Checking two line are equal or not using equals method
+		public void checkLineEquality() {
 			l1 = new Line1();  
-			l2 = new Line2(); 
-			if(new Double (l1.line1).equals( new Double (l2.line2))){
-				  System.out.println("Lenghth of line1 and line2 are Equal - Using equals() method");
-			}else System.out.println("Lenghth of line1 and line2 are Not Equal - Using equals() method");
+			l2 = new Line2(); 		
+
+			double lengthOfline1=l1.length1;
+			Double doubleLengthOfline1 = lengthOfline1;
+
+			double lengthOfline2= l2.length2;
+			Double doubleLengthOfline2 = lengthOfline2;
+	        
+	        if (doubleLengthOfline1.equals(doubleLengthOfline2))
+	            System.out.println("Lines are equal Compared Using equals() method");
+	        else
+	            System.out.println("Lines are not equal Compared Using equals() method");
 		}
 		
-		public void byCompareTo() {
+//		Comparing Two lines using compareTo method
+		public void compareTwoLines() {
 			l1 = new Line1();  
 			l2 = new Line2(); 
-			if((new Double (l1.line1).compareTo(new Double (l2.line2)))==0){
-				  System.out.println("Both Lenght of lines are Equal - Using compareTo() method");
-			}else if ((new Double (l1.line1).compareTo(new Double (l2.line2)))>0) {
-				  System.out.println("Lenghth of line1 is Greater than line2 - Using compareTo() method");
-			}else System.out.println("Lenghth of line2 is Greater than line1 - Using compareTo() method");		
-		}	
+
+			double lengthOfline1=l1.length1;
+			Double doubleLengthOfline1 = lengthOfline1;
+
+			double lengthOfline2= l2.length2;
+			Double doubleLengthOfline2 = lengthOfline2;
+			
+			int value=doubleLengthOfline1.compareTo(doubleLengthOfline2);
+	        
+	        if (value<0)
+	            System.out.println("First Line is less than second Line Compared Using compareTo() method");
+	        else if(value>0)
+	        	System.out.println("First Line is greater than second Line Compared Using compareTo() method");
+	        else
+	            System.out.println("Both Lines are equal Compared Using compareTo() method");
+		}
+			
 }
