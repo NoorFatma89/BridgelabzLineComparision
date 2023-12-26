@@ -2,19 +2,14 @@ package com.bridgelabz.linecomparision;
 
 public class LineComparision {
 		
-		Line1 l1;
-		Line2 l2;
+		Line1 firstLine = new Line1();  
+		Line2 secondLine = new Line2();
 		
 //	 	Checking two line are equal or not using equals method
 		public void checkLineEquality() {
-			l1 = new Line1();  
-			l2 = new Line2(); 		
-
-			double lengthOfline1=l1.length1;
-			Double doubleLengthOfline1 = lengthOfline1;
-
-			double lengthOfline2= l2.length2;
-			Double doubleLengthOfline2 = lengthOfline2;
+			
+			Double doubleLengthOfline1 = firstLine.length1;
+			Double doubleLengthOfline2 = secondLine.length2;
 	        
 	        if (doubleLengthOfline1.equals(doubleLengthOfline2))
 	            System.out.println("Lines are equal Compared Using equals() method");
@@ -24,14 +19,9 @@ public class LineComparision {
 		
 //		Comparing Two lines using compareTo method
 		public void compareTwoLines() {
-			l1 = new Line1();  
-			l2 = new Line2(); 
 
-			double lengthOfline1=l1.length1;
-			Double doubleLengthOfline1 = lengthOfline1;
-
-			double lengthOfline2= l2.length2;
-			Double doubleLengthOfline2 = lengthOfline2;
+			Double doubleLengthOfline1 = firstLine.length1;
+			Double doubleLengthOfline2 =secondLine.length2;
 			
 			int value=doubleLengthOfline1.compareTo(doubleLengthOfline2);
 	        
